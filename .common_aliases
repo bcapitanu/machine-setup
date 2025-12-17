@@ -1,0 +1,33 @@
+# System aliases
+alias ls='eza -gF'
+alias l='ls -l'
+alias ll='ls -l |more'
+alias la='ls -la'
+alias lla='ls -la |more'
+alias l.='ls -d .*'
+alias ll.='ls -d .* |more'
+alias lt='ls -lt | more'
+alias cls='clear'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias less='less -Xr'
+alias -- +='pushd .'
+alias -- -='popd'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias beep='echo -en "\007"'
+alias cd..='cd ..'
+alias act='source .venv/bin/activate'
+
+alias http='http --timeout 6000'
+alias k=kubectl
+alias kx=kubectx
+alias kns=kubens
+
+alias kubectl='kubecolor'
+
+[ -s "$HOME/.asapp_aliases" ] && . "$HOME/.asapp_aliases"

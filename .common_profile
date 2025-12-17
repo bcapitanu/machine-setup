@@ -1,0 +1,18 @@
+### Environment settings
+export EDITOR=vim
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxegedabagacad
+export JAVA_HOME=$(/usr/libexec/java_home) # for specific version, add "-v 17" to java_home arguments
+export HOMEBREW_GITHUB_API_TOKEN=...
+export GIT_API_TOKEN=...  # "cookiecutter" token used for generating PY projects from templates
+export GO111MODULE=on
+export GOPRIVATE="github.asapp.dev/*,github.com/asappinc/*"
+export GOTOOLCHAIN=auto
+
+# For 1password SSH access
+export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+# ASAPP-specific settings
+export VAULT_ADDR=https://vault.us-east-1.shared.asapp.dev
+export LOKI_ADDR=https://logs.asapp.dev
+export CFTOOLS_API_KEY=...

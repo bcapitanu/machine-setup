@@ -1,0 +1,3 @@
+alias awsecr='aws-okta exec asapp-prod-okta-ml-eng-us -- aws ecr get-login-password | docker login --username AWS --password-stdin 524951270132.dkr.ecr.us-east-1.amazonaws.com'
+
+alias awsecr2='aws ecr get-login-password --profile=prod-sso-ml-eng --region us-west-2| docker login --username AWS --password-stdin 524951270132.dkr.ecr.us-west-2.amazonaws.com'
