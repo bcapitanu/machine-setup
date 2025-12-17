@@ -1,0 +1,27 @@
+[user]
+	name = ...
+	email = ...
+	#signingkey = ...
+
+[color]
+	ui = always
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+
+[push]
+	default = upstream
+	autoSetupRemote = true
+
+[init]
+	defaultBranch = main
+
+[url "ssh://git@github.com/asappinc"]
+        insteadOf = https://github.com/asappinc
+[url "ssh://git@github.com/asappinc"]
+        insteadOf = https://github.com/ASAPPinc
+[url "ssh://git@github.asapp.dev/"]
+        insteadOf = https://github.asapp.dev/
+[url "ssh://git@github.asapp.dev"]
+        insteadOf = https://github.asapp.dev
