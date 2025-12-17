@@ -136,6 +136,8 @@ cask "claude-code"
 cask "docker-desktop"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# GUI for vim, made for macOS
+cask "macvim"
 # Collaboration platform for API development
 cask "postman"
 # Open-source code editor
