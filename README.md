@@ -1,7 +1,8 @@
 # machine-setup
 
-Step 0: back up any files that you'll overwrite in Step 1
-Step 1: copy all the files from this repo into $HOME
+**Step 0**: back up any files that you'll overwrite in Step 1
+
+**Step 1**: copy all the files from this repo into $HOME
 
 Then, 
 
