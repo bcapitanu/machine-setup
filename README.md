@@ -19,7 +19,7 @@ subl ~/.common_profile
 ```
 export HOMEBREW_GITHUB_API_TOKEN=...token...
 ```
-- set `CFTOOLS_API_KEY` to the token generated from Codefresh (create one at https://g.codefresh.io/user/settings )
+- set `CFTOOLS_API_KEY` to the token generated from Codefresh (create one at https://g.codefresh.io/user/settings - for simplicity, add all the scopes for the token)
 ```
 export CFTOOLS_API_KEY=...token...
 ```
