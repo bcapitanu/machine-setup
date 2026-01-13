@@ -100,9 +100,6 @@ setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks before recording entry
 alias history="history 0"
 #### END unlimited-history
 
-### iterm2 shell integration
-[ -s ~/.iterm2_shell_integration.zsh ] && . ~/.iterm2_shell_integration.zsh
-
 ### Homebrew integration (see https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh)
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -118,6 +115,9 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config 'pure')"
   fi
 fi
+
+### iterm2 shell integration
+[ -s ~/.iterm2_shell_integration.zsh ] && . ~/.iterm2_shell_integration.zsh
 
 ### fzf for zsh (common customizations in .common_env)
 if command -v fzf >/dev/null 2>&1; then
