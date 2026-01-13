@@ -140,6 +140,8 @@ cask "iterm2"
 cask "macvim"
 # Collaboration platform for API development
 cask "postman"
+# Text editor for code, markup and prose
+cask "sublime-text"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
