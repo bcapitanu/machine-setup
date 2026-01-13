@@ -6,12 +6,7 @@
 
 Then, 
 
-1. Make sure you installed `sublime-text` to have an easy-to-use text editor available
-```
-brew install sublime-text
-```
-
-2. Use the newly-installed sublime-text to edit $HOME/.common_profile to set the missing keys
+1. Use sublime-text to edit $HOME/.common_profile to set the missing keys
 ```
 subl ~/.common_profile
 ```
@@ -26,7 +21,7 @@ export CFTOOLS_API_KEY=...token...
 ```
 Save and close the file.
 
-3. Run the following commands
+2. Run the following commands
 - update Homebrew packages
 ```
 brew update && brew upgrade && brew cleanup
