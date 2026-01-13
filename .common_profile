@@ -4,7 +4,6 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 export JAVA_HOME=$(/usr/libexec/java_home) # for specific version, add "-v 17" to java_home arguments
 export HOMEBREW_GITHUB_API_TOKEN=...
-export GIT_API_TOKEN=...  # "cookiecutter" token used for generating PY projects from templates
 export GO111MODULE=on
 export GOPRIVATE="github.asapp.dev/*,github.com/asappinc/*"
 export GOTOOLCHAIN=auto
