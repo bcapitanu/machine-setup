@@ -114,6 +114,8 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   if command -v oh-my-posh >/dev/null 2>&1; then
     eval "$(oh-my-posh init zsh --config $HOME/.prompt.omp.yaml)"
   fi
+else
+  export PROMPT='%b%s%k%F{green}%n@%m%f:%{$fg[blue]%}%~%{$reset_color%}%(!.#.$) '
 fi
 
 ### iterm2 shell integration
