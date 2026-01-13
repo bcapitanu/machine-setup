@@ -1,0 +1,39 @@
+version: 4
+final_space: true
+blocks:
+  - type: prompt
+    alignment: left
+    segments:
+      # User and Host (green)
+      - type: session
+        style: plain
+        foreground: green
+        template: "{{ .UserName }}@{{ .HostName }}"
+      - type: text
+        style: plain
+        template: ":"
+      # Directory (blue)
+      - type: path
+        style: plain
+        foreground: blue
+        template: "{{ .Path }}"
+        options:
+          style: agnoster_full
+      # Root/User symbol
+      - type: text
+        style: plain
+        template: "{{ if .Root }}#{{ else }}${{ end }}"
+
+  - type: rprompt
+    segments:
+      - type: git
+        style: plain
+        options:
+          fetch_status: true
+          fetch_upstream_icon: false
+        template: "(<magenta><b>{{ .HEAD }}</b></>{{ if .Upstream }}<yellow><b>⟳</b></>{{ end }}{{ if or .Ahead .Behind }}<white>{{ if .Ahead }}↑{{ .Ahead }}{{ end }}{{ if .Behind }}↓{{ .Behind }}{{ end }}</>{{ end }}{{ if or .Staging.Changed .Working.Changed }}{{ if .Staging.Changed }}|<green>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}|<red>{{ .Working.String }}</>{{ end }}{{ else }}|<green><b>✔</b></>{{ end }}{{ if .StashCount }}|<blue><b>⚑</b></>{{ .StashCount }}{{ end }})"
+
+transient_prompt:
+  style: plain
+  background: transparent
+  template: "<green>{{ .UserName }}@{{ .HostName }}</>:<blue>{{ .PWD }}</>{{ if .Root }}#{{ else }}${{ end }} "
